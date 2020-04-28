@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="liste.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fomulaire</title>
 </head>
-<body>
-    
+<body id="bodyform">
+    <header id="headerform">
+        <h1 id="titreform">Fomulaire d'ajout</h1>
+        <hr>
+    </header>
+    <main id="mainform">
+        <form id="form" class="form" method="POST" action="mailto:gregory.jonville@laplateforme.io">
+            <div id="padform">
+                <label class="labelform" for="prenom">Prénom</label><br>
+                <input type="text" class="padform" id="prenom" name="prénom" placeholder="Antoine" required><br>
+
+                <label class="labelform" for="nom">Nom</label><br>
+                <input type="text" class="padform" id="nom" name="nom" placeholder="Dubois" required><br>
+
+                <label class="labelform" for="mail">E-Mail</label><br>
+                <input type="email" class="padform" id="email" name="email" placeholder="abc@abc.fr" required><br>
+                
+                <label class="labelform" for="non de l'objet">Nom de l'objet</label><br>
+                <input type="text" class="padform" id="objet" name="objet" placeholder="Landeau" required><br>
+                
+                <label class="labelform" for="imgmini">Images</label><br>
+                <input type="file" id="imgmini" name="imgmini" accept="image/png, image/jpeg" required><br>
+                
+                <div id="catform">
+
+                        <div id="cattitform">
+                            <label  class="labelform" for="categorie.">Catégories</label><br>
+                        </div>
+
+                        <div id="radioform">
+                            <label for="categorie">Catégorie 1</label>
+                            <input type="radio" class="categorie" name="categorie">
+                            <label for="categorie">Catégorie 2</label>
+                            <input type="radio" class="categorie" name="categorie">
+                            <label for="categorie">Catégorie 3</label>
+                            <input type="radio" class="categorie" name="categorie">
+                            <label for="categorie">Catégorie 4</label>
+                            <input type="radio" class="categorie" name="categorie"><br>
+                        </div>
+
+                </div>
+
+                <label  class="labelform" for="description">Description</label><br>
+                <input type="text" class="padform" id="description" name="description" placeholder="Description" required><br>
+                
+                <label  class="labelform" for="lien">Lien du vendeur</label><br>
+                <input type="url" class="padform" id="lien" name="lien" placeholder="https://www..." required><br><br>
+            </div>
+
+        <div id="buttonalign"> 
+            
+            <input type="submit" id="submit" name="submit" value="Envoyer">
+            <input type="reset" id="reset" value="Annuler">
+
+        </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
