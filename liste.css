@@ -104,7 +104,20 @@
     background-color: #B1B1B1;
     width: max-content;
     box-shadow: 10px 10px 20px black;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
 
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+      }
+    
+      to {
+        margin: initial;
+
+      }
 }
 
 .labelform {
@@ -145,6 +158,10 @@
     align-items: center;
 }
 
+#radioform label {
+    font-family: "introscriptr-h2base";
+}
+
 #mainform {
     display: flex;
     justify-content: center;
@@ -153,6 +170,7 @@
 
 
 #reset {
+    font-family: "introscriptr-h2base";
     border: 1px solid black;
     border-left: 0px;
     width: 100%;
@@ -160,7 +178,9 @@
     border-radius: 0px 0px 30px 0px;
 }
 
+
 #submit {
+    font-family: "introscriptr-h2base";
     width: 100%;
     margin: 0px;
     border: black solid 1px;
@@ -168,7 +188,14 @@
     padding: 1em;
 }
 
+#submit:hover, #reset:hover {
+    padding: 0.25em 0.55em 0.25em 0.55em;
+    font-size: 150%;
+    background-image: radial-gradient( white,#59B1FF);
+}
+
 #buttonalign {
+
     width: 100%;
     display: flex;
 
