@@ -1,0 +1,175 @@
+/* LISTE */
+
+#bodylist {
+    margin: 0px;
+}
+
+#headerlist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgflip {
+    transform: scaleX(-1); 
+}
+
+#main {
+    display: flex;
+}
+
+#listtab1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0;
+}
+
+
+#listtab2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FORMULAIRE */
+
+@font-face {
+    font-family: "AlexBrush-Regular";
+    src: url('../liste-naissance/font/alex-brush/AlexBrush-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'introrustg-base2line';
+    src: url('../liste-naissance/font/My_Fontspring_Fonts_Order_54983109/Web Fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff2') format('woff2'),
+         url('../liste-naissance/font/My_Fontspring_Fonts_Order_54983109/Web Fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'introscriptr-h2base';
+    src: url('../liste-naissance/font/My_Fontspring_Fonts_Order_54983109/Web Fonts/introscriptrustr_h2base_macroman/introscriptr-h2base-webfont.woff2') format('woff2'),
+         url('../liste-naissance/font/My_Fontspring_Fonts_Order_54983109/Web Fonts/introscriptrustr_h2base_macroman/introscriptr-h2base-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#bodyform {
+    margin: 0em;
+    padding: 0em;
+    background-image: linear-gradient( #59B1FF,white ); 
+    width: 100%;
+    height: 100%;
+}
+
+#headerform {
+    background-color: #59B1FF;
+    margin: 0px;
+
+}
+
+#titreform {
+    text-shadow: white 4px 2px 4px;
+    font-size: 3em;
+    font-family: "AlexBrush-Regular";
+    height: 100%;
+    margin: 0px;
+    letter-spacing: 0.4em;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: transparent 1px solid;
+    border-radius: 30px;
+    background-color: #B1B1B1;
+    width: max-content;
+    box-shadow: 10px 10px 20px black;
+
+}
+
+.labelform {
+    font-family: "introrustg-base2line";
+}
+
+#form .padform {
+    border: transparent 1px solid;
+    border-radius: 5px 30px 5px 30px;
+    padding-left: 0.5em;
+
+}
+
+#padform {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em 0em 1em;
+
+}
+
+#padform label {
+    margin: 0.7em;
+}
+
+#catform {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cattitform {
+    display: flex;
+    align-items: center;
+}
+
+#radioform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainform {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#reset {
+    border: 1px solid black;
+    border-left: 0px;
+    width: 100%;
+    padding: 1em;
+    border-radius: 0px 0px 30px 0px;
+}
+
+#submit {
+    width: 100%;
+    margin: 0px;
+    border: black solid 1px;
+    border-radius: 0px 0px 0px 30px;
+    padding: 1em;
+}
+
+#buttonalign {
+    width: 100%;
+    display: flex;
+
+}
